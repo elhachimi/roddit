@@ -1,0 +1,10 @@
+<h1>New comment</h1>
+<%= form_for @comment do |f| %>
+    <%= f.label :body %>
+    <div class="fom-group">
+        <%= f.text_area :body, class: "form-control" %>
+    </div>
+    <div class="fom-group">
+        <%= f.submit 'Comment', class: "btn btn-primary bnt-lg" %>
+    </div>
+<% end %>

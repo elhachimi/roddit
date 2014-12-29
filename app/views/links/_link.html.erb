@@ -1,0 +1,8 @@
+<div>
+    <h2><%=link_to link.title, link_path(link) %></h2>
+    <p>
+        Submitted <%= time_ago_in_words link.created_at %> 
+        by <%= link.user.name %>
+    </p>
+</div>
+<hr>
